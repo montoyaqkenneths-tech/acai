@@ -1,0 +1,6 @@
+{
+  "name": "Açaí Ritual",
+  "description": "An artisanal health food brand focusing on luxury açaí experiences, featuring high-contrast minimalism and elegant editorial design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

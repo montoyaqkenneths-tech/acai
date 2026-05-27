@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Manrope:wght@400;600&family=Playfair+Display:ital,wght@1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-decorative: "Playfair Display", serif;
+
+  --color-surface: #fff7fb;
+  --color-surface-dim: #e8d3ea;
+  --color-surface-bright: #fff7fb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #ffeffe;
+  --color-surface-container: #fde7fe;
+  --color-surface-container-high: #f7e1f9;
+  --color-surface-container-highest: #f1dcf3;
+  --color-on-surface: #231727;
+  --color-on-surface-variant: #4d444d;
+  --color-inverse-surface: #392c3d;
+  --color-inverse-on-surface: #feebff;
+  --color-outline: #7e747e;
+  --color-outline-variant: #d0c3ce;
+  --color-surface-tint: #7a4d86;
+  --color-primary-brand: #000000;
+  --color-on-primary-brand: #ffffff;
+  --color-primary-container: #30063e;
+  --color-on-primary-container: #a372ae;
+  --color-inverse-primary: #eab4f5;
+  --color-secondary-brand: #b9085d;
+  --color-on-secondary-brand: #ffffff;
+  --color-secondary-container: #fd4c90;
+  --color-on-secondary-container: #590029;
+  --color-background-brand: #fff7fb;
+  --color-on-background-brand: #231727;
+
+  --radius-xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background-brand text-on-background-brand font-sans selection:bg-secondary-brand selection:text-white;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #fd4c90 0%, #b9085d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-gradient-bg {
+  background: linear-gradient(135deg, #b9085d 0%, #fd4c90 100%);
+}
+
+.glass-nav {
+  @apply bg-white/80 dark:bg-primary-container/80 backdrop-blur-xl border-b border-outline-variant/10;
+}
